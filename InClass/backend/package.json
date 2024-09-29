@@ -1,14 +1,6 @@
-{
-  "name": "backend",
-  "version": "1.0.0",
-  "main": "helloworld.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "nodemon": "^3.1.7"
-  }
-}
+const Sentiment = require('sentiment');
+const sentiment = new Sentiment();
+const result = sentiment.analyze('Cats are stupid.');
+console.log(result); // Score: -2, Comparative: -0.666
+
+  
