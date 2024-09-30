@@ -1,9 +1,15 @@
+
 //this is the structure of a function
 //function ThisIsTheName(Signature){
+=======
+// this is the structure of a function
+// function ThisIsTheName(Signature) {
+
 //  Body
 // }
 
 function sayHello() {
+
 console.log('Hello Chelsea')
 }
 
@@ -17,12 +23,18 @@ function sum(1, 2) {
 }
 sum(1, 2) 
    
-const Sentiment =require('sentiment')
-const Sentiment =new Sentiment();
-const result =sentiment.analyze('Cats are stupid');
-console.log(result);    //Score: -2, Comparative: -0.666
-
-
 
 
   
+
+    console.log('Hello Chelsea')
+}
+
+sayHello();
+
+ function sum(a,b) {
+    sum(5,1)
+    console.log(a+b)
+ }
+sum(5, 2);
+
