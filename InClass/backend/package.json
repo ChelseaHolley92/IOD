@@ -1,11 +1,20 @@
 
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+=======
 
 
 
 
-//example from slides
-const Sentiment = require('sentiment');
-const sentiment = new Sentiment();
-let result=const result = sentiment.analyze('Cats are stupid.');
-console.log(result); // Score: -2, Comparative: -0.666
+
+
 
