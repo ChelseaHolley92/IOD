@@ -39,4 +39,17 @@ let books= [
     description: "A mystery set in the narshes at North Carolina"
     author: "Delia Owens"
     numPages: "368"
+},
+{
+    title: "circe"
+    description: "A modern retelling of the life of circe, the greek enchantress"
+    author: "Madeline Miller"
+    numPages: "393"
+},
+{
+    title: "The Silent patient"    
+    description: "A thriller about a woman who steps"
+
+
+
 
