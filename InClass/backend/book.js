@@ -21,13 +21,13 @@ console.log(book.decription)
 
 //Createan array of 5 books objects
 
-let books= [
+let books= {
 
     title: "The Night Circus",
     description:"Magical competition between two young illusionists",
     author:"Erin Morgenstern",
     numPages: 387
-} ,
+}
 {
     title: "The Martian"
     description: "an Astouant becomes stranded on mars and needs to find a way to survive"

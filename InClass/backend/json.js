@@ -12,7 +12,7 @@ console.log(user.age)
 
 console.log({"last_name"})}
 
-user.follwers=998
+user.followers=998
 
 console.log(user.followers)
 
