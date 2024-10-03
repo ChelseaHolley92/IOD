@@ -1,21 +1,21 @@
 //objects in javascript contain keys (or properties) with corresponding values
 
-const user={
-    "first_name" :"Sammy" ,
-    "last_name" :"shark" ,
-    "age" : 25
-    "followers" :987
+const user= { 
+    "first_name" : "Sammy" ,
+    "last_name" : "shark" ,
+    "age" : 25 ,
+    "followers" : 987
 }
 
 console.log(user.first_name)
 console.log(user.age)
 
-console.log({"last_name"})}
+console.log(["last_name"])
 
-user.followers=998
+user.followers= 998
 
 console.log(user.followers)
 
-user.location='Pacific Ocean
+user.location='Pacific Ocean'
 
 console.log(user.location)
