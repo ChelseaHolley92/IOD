@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
   <meta charset="UTF-8">
   <meta name="description" content="Practicing html tags">
 <meta name=" viewport" content="width=device-width, initial-scale=1.0">
@@ -22,26 +27,81 @@
     <il>span</il>
     <li>p</li>
     <li>pre</li>
-    <li>ul</li>
-    <li>ol</li>
-    <li>article</li>
+        <ul>
+            <li>ul</li>
+            <li>li</li>
+        </ul>
+      <li>
+    </ul>
     
+    <p>This is an ordered list:</p>
+    <ol>
+      <li>ol</li>
+      <li>article</li>
+      <li>div</li>
+    </ol>
+</article>
+</body>
+</html>
+   
+<body>
+ <article>
+  <h2>Learning Tables</h2>
+  <table>
+    <thead>
+    <tr>
+        <th colspan="2">Header for First and Second Columns</th>
+        <th>Third Column header</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>First cell - first row</td>
+            <td>Second cell - first row</td>
+            <td>Third cell-first row</td>
+        </tr>
+    </tbody>
+</table>
+<article>
+  <h2>Adding an Image</h2>
+  <img src="https://picsum.photos/400/400" alt="Sample Image" width="300" height="300">
+</article>
 
+<article>
+  <h2>Adding a Second Image </h2>
+  <img src="assets/html_lab_image.jpg" alt="Local Image" width="300" height="300">
+</article>
 
-  </ul>
+<article>
+<h2>Adding a Video</h2>
+<video controls width="250">
+  <source src="/assets/flower.webm" type="video/webm">
+  Sorry, your browser doesn't support embedded videos.
+</video>
+
+<article>
+  <h2>Adding Audio</h2>
+  <audio controls src="/assets/t-rex-roar.mp3">
+    Your browser does not support the <code>audio</code> element.
+</audio>
 
 </article>
-  <header>
-    <nav>
-      <!-- works like <a href="/index.html">Home</a> -->
-      <a href="/">Home</a>
-    </nav>
-  </header>
+</article>
 
-  <main>  
-  </main>
-
-  <footer>Copyright &copy; 2024</footer>
 </body>
+<tbody>
+    <tr>
+      <td rowspan="2">First cell-second row (spanning two rows)</td>
+      <td>Second cell-second row</td>
+      <td>Third cell-second row</td>
+      
+    </tr>
+    <tr>
+        <td>Second cell-third row</td>
+      
+        
 
-</html>
+            </tr>
+</tbody>
+
+
