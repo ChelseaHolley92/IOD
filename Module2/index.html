@@ -25,18 +25,16 @@
   <header>
      <nav>
          <a href="/">Home</a>
-         <a href=""
-
-
+         <a href="form.html">Form</a>
     </nav>
   </header>
 
-
-
+<main>
 
 <h1> "My HTML learning journey"</h1>
 
 <article>
+
   <h2>Learning HTML Elements-div, span, pre, p, ul, li, ol, article</h2>
 
 <div>HTML</div> <div>CSS</div> <div>Javascript</div>
@@ -52,89 +50,91 @@ line breaks
 
 <p> p represents paragraph    without preserving      spacing</p>
 
-  <p>This is an unordered list:</p>
   <ul>
     <li>apples</li>
     <il>cherries</il>
     <li>plums</li>
     <li>watermelon</li>
+  </ul>
+            
+  <ol>
+   <li>apples</li>
+   <li>cherries</li>
+   <li>plums</li>
+   <li>watermelon</li>
+   </ol>
 
-        <ul>
-            <li>first bullet</li>
-            <li>second bullet</li>
-        </ul>
-      <li>
-    </ul>
-    
-    <p>This is an ordered list:</p>
-    <ol>
-      <li>apples</li>
-      <li>cherries</li>
-      <li>watermelom</li>
-    </ol>
+  <ol>
+<li>apples</li>
+<li>cherries</li>
+<li>plums</li>
+      <ul>
+      <li>first bullet</li>
+    <li>second bullet</li>
+   </ul>
+  </li>
+  </ol>
 
 </article>
-</body>
-</html>
-   
-<body>
+
  <article>
-  <h2>Learning Tables</h2>
+  <h2>HTML elements-table</h2>
+
   <table>
     <thead>
     <tr>
-        <th colspan="2">Header for First and Second Columns</th>
-        <th>Third Column header</th>
+        <th colspan="2">First Header</th>
+        <th>Second header</th>
     </tr>
     </thead>
-    <tbody>
-        <tr>
+    
+  <tbody>
+
+           <tr>
             <td>First cell - first row</td>
             <td>Second cell - first row</td>
             <td>Third cell-first row</td>
         </tr>
+
+          <tr>
+            <td rowspan="2">First cell-second row </td>
+            <td>Second cell-second row</td>
+            <td>Third cell-second row</td>
+          </tr>
+
+          <tr>
+            <td>First cell-third row</td>
+            <td>Second Cell-third Row</td>
+          </tr>
+
     </tbody>
 </table>
+</article>
+
 <article>
-  <h2>Adding an Image</h2>
+  <h2>HTML elements-ing, video,audio</h2>
+
   <img src="https://picsum.photos/400/400" alt="Sample Image" width="300" height="300">
-</article>
 
-<article>
-  <h2>Adding a Second Image </h2>
   <img src="assets/html_lab_image.jpg" alt="Local Image" width="300" height="300">
-</article>
 
-<article>
-<h2>Adding a Video</h2>
 <video controls width="250" autoplay>
   <source src="/assets/flower.webm" type="video/webm">
   Sorry, your browser doesn't support embedded videos.
 </video>
 
-<article>
-  <h2>Adding Audio</h2>
-  <audio controls src="/assets/t-rex-roar.mp3">
+<figure>
+  <figcaption>Listen to the T-Rex:</figcaption>
+  <audio controls autoplay src="/assets/t-rex-roar.mp3">
     Your browser does not support the <code>audio</code> element.
 </audio>
+  </figure>
 
 </article>
-</article>
+
+</main>
+
+<footer>Copyright &copy; 2024 All rights reserved by me</footer>
 
 </body>
-<tbody>
-    <tr>
-      <td rowspan="2">First cell-second row (spanning two rows)</td>
-      <td>Second cell-second row</td>
-      <td>Third cell-second row</td>
-      
-    </tr>
-    <tr>
-        <td>Second cell-third row</td>
-      
-        
-
-            </tr>
-</tbody>
-
-
+</html>
