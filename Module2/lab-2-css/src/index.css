@@ -1,0 +1,315 @@
+/* I. Selectors */
+
+/* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+
+/* 1.1-style all articles using type selector*/
+
+article {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+/* 1.2-use class selector to set front color to red */
+
+.style-me1 {
+    color: red;
+}
+
+/* 1.3-use id selector to set font color to blue */
+
+#style-me2 {
+    color:blue
+}
+/* use id selector to set font color to purple */
+
+#style-me2.style-me1 {
+    color:purple;
+}
+
+/* 2.1-use descendant combinator selector to set background color to red */
+
+.my-descendants-are-styled p {
+    background: red;
+}
+
+/*2.2-Use a child combinator selector to set background color to lightgreen */
+
+.my-children-are-styled >p {
+    background: lightgreen;
+}
+
+
+/*Put styles for questions 2.1 and 2.2 here */
+
+
+/* II. Box model and common properties */
+
+/* Put  styles for questions 1-8 */
+
+.box{
+
+    /* 1.1-set a background color */
+    background:#06dfdf;
+
+   /* 1.2-use 4, 2, and 1 value synyax to set margin and padding*/
+   margin: 20px;
+   margin: 20px 10px;
+   margin: 10px 20p 30px 40px;
+
+   padding: 20px;
+   padding: 20px 10px;
+   padding: 20px 20px 30px 40px;
+
+/* 2.1-Set width and height using different dimension units */
+height: 100px;
+height:20%;
+height:10em;
+height:15vh;
+
+width: 100px;
+width: 25%;
+width: 15em;
+width: 40vw;
+
+/* 2.2-This style attribute overrides all other CSS */
+height: 100px !important;
+width: 80% !important;
+
+/* 2.3-Resize window on the browser to see what happens to the box
+
+/* 3.1-Set a border on the .box element */
+border:2px dashed red;
+border: 5px dotted yellow;
+
+/* 3.2-Make the border 10px thick and solid */
+border: 10px solid rgb(244, 57, 175);
+
+/* 4.1-Test two different values of box-sizing-how are they effected? Width + Height */
+box-sizing: border-box;
+box-sizing: content-box;
+
+/* 5.1-Make text overflow outside of the element by setting smaller width/height */
+height: 50px;
+
+/* 5.2-Set overflow CSS rule for the .box class-Testing a few differenting values */
+overflow:hidden;
+overflow:scroll;
+overflow:auto;
+
+/*6.1-Set a wide outline (10px) on the box */
+outline: 10px solid rgba(0, 110, 255, 0.79);
+
+/* 7.1-Setting border-radius on the .box element */
+border-radius: 20px;
+border-radius: 3em;
+
+/* 7.2-Setting border-radius to 50% */
+border-radius: 50%;
+
+/* 7.3-Increase the padding to account for the border radius */
+padding: 3em;
+
+/* 8.1-Adding a background image */
+background: url("assets/images/img1.png");
+
+/* 8.2-Set background size to cover */
+background-size: cover;
+
+/* 8.3-Set background to no-repeat */
+background-repeat:no-repeat;
+
+/* 8.4-Set background to Center */
+background-position:Center;
+
+}
+
+/* III. Positioning */
+
+/* Put styles for questions 1-3 here */
+
+.position-absolute {
+
+  /* 1.1-use CSS to apply absolute position on .position-absolute class */
+    position:absolute;
+
+    /* 1.2-Add a top position of 0 */
+    top: 0;
+    right:0;
+
+    /* 1.3-add a background color */
+    background:orange;
+}
+
+.position-relative {
+
+  /* 2.1-Set a relative position on .position-relative class */
+  position:relative;
+
+ /* 2.2-Add a different background to relative positioned container */
+    background:purple;
+
+/* 2.3-How is it positioned copared to absolute */
+
+/* 2.4-Add a left position value to the position-absolute class */
+
+}
+
+.position-sticky {
+
+/* 3.1-Set sticky position on .position-sticky class */
+position:sticky;
+
+/* 3.2-Add a differernt background color to the position */
+background:rgb( 110, 18, 18);
+color:white;
+
+/* 3.3-Set a top position value to change where the element 'sticks' to */
+top: 20px;
+
+}
+
+/* IV Styling text +/
+
+/* Put styles for questions 1-10 here */
+
+.text-style {
+
+ /* 1 Set a font color using the color CSS rule on the .text-style class */
+ color:darkcyan;
+
+/* 2. Add a font-size CSS rule to the text-style class */
+font-size: 20px;
+font-size: 2em;
+
+/* 3. Add a line-height CSS rule in the .text-style class */
+line-height: 1.5;
+line-height: 1em;
+
+/* 4. Add a font-weight CSS rule to the .text-style class */
+font-weight:bold;
+font-weight:700;
+
+/* 5. Add font-family CSS rule to the .text-style class */
+font-family: sans-serif;
+
+/* 5.1 visit https://fonts.google.com/ find Roboto */
+
+/* 5.2 select certain styles */
+
+/* 5.3 select the link option use on the web and copy stylesheet
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+/* 5.4 adding sans-serif after Roboto */
+
+/* 5.1.1-Add Text-alignment */
+text-align:center;
+
+/* 5.1.2-Add letter spacing */
+p {
+  letter-spacing: 2px;
+}
+
+/* 5.1.3-Add word spacing */
+p {
+word-spacing:5px;
+}
+
+/* 5.1.4-Add Text Transform */
+h2 {
+    text-decoration:uppercase;
+}
+
+/* 5.1.5-Add Text Decoration */
+h3 {
+text-decoration: underline;
+text-decoration: line-through;
+}
+
+}
+
+/* V. Styling links */
+
+/* Put sty;es for questions 1-3 here */
+
+/* 1-Style all of the links in index.html */
+a,
+a:link {
+    /* 1.1-Set a font color */
+    color:#2a9dBf;
+    /* 1.2 Modify Font-size, font-weight, and text decoration for your links */
+    font-size: 1.5em;
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+/* 2-Style all 'active' links differently to default links */
+a:hover,
+a:active,
+a:focus {
+
+    /* 2.1-Override the color with a darker shade */
+    color:brown;
+
+    /* 2.2 use a different text-decoration value */
+    text-decoration: none;
+
+}
+
+/* 3-Style your special styling differently for visited links */
+a:visited {
+    /* 3.1-overriding color */
+    color:beige;
+    /* 3.2-Using a different font-style value-doesn't work! */
+    font-style: italic;
+}
+
+
+
+/* VI. calc() */
+
+/* Put styles for questions 1-3 here */
+
+/* 1. Add a new fixed width rule: width: 100vw; to the .cal-style class */
+.calc-style {
+    width: 100vw;
+
+    /* 1.1 Add a background color to the .calc-style class to see boundaries */
+    background:#E3D081;
+
+    /* 1.2-Add a new rule: width calc(100vw-100px); to the .calc-style class */
+    width:calc(100vw-100px);
+}
+
+/* 2. Create a new selector for .fixed-width-col class and set display to inline-block */
+.fixed-width-col{
+    display:inline-block;
+    width: 350px;
+}
+
+/* 3. Create second selector for fluid-col class and set display to inline-block */
+.fluid-col {
+   display:inline-block;
+
+ /*  3.1-use calc() to set a dynamically calculated wifth for the fluid-col and make them appear sidebyside */
+      width:calc(100%-360px);
+}
+
+
+
+
+/* III. Positioning */
+/* Put styles for questions 1-3 here */
+
+
+/* IV. Styling text */
+/* Put styles for questions 1-10 here */
+
+
+/* V. Styling links */
+/* Put styles for questions 1-3 here */
+
+
+/* VI. calc() */
+/* Put styles for questions 1-3 here */
