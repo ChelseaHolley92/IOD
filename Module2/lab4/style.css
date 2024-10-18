@@ -1,0 +1,98 @@
+body { 
+    background-color: black; 
+    color:white;
+   text-decoration: underline;
+  
+ }
+
+h1 {
+text-align: center;
+color:white;
+ }
+ .bold-items ul {
+    font-weight: bold;
+ }
+
+ 
+p { 
+text-align: center;
+line-height: 1.6;
+max-width: 800px;
+margin: 0% auto;
+font-size: 16px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+    background-color: lightgrey;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: lightgrey;
+} 
+
+ul {
+    list-style: none
+    padding-left: 0;
+}
+
+ul li {
+    font-weight:bold;
+    margin-bottom: 5px;
+}
+
+#contact-section {
+    margin-top: 50px;
+    
+}
+
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+content-container {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left section {
+    flex:1;
+    margin-right: 40px;
+}
+.left-section img {
+    max: width 100%;
+    border: radius 10px;
+}
+.right-section {
+    flex 2;
+}
+
+.right-section h1 {
+    font-size: 24px;
+    text-align:center;
+}
+
+.right-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
