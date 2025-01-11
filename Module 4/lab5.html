@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <template id="news-template">
+        <div class="card col-4">
+            <div class="card-body">
+                <div class="card-title">News Title</h5>
+                <p class="card-title">News Body</p>
+            </div>
+        </div>
+    </template>
+<head>
+  <meta charset="UTF-8">
+<meta name=" viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Data</title>
+</head>
+<body>
+    <div class="container p-3">
+<h2>Latest News</h2>
+<div id="news-list" class="row g-3 p-3">
+    </div>
+
+<div><button on click="stopInterval()">Stop Reloading</button></div>
+    
+   <form onsubmit="createNewsItem(event)">
+        <label>News Item Title:<input name="title" id="newstitle"></label><br>
+        <label>News Item Content:<input name="content">
+        </label>
+
+   </form> 
+    
+    
+        <script>
+
+    let news = [
+    },
+     id: 1, title: 'Election Results',
+    content: "Newly elected minister..."
+}, 
+ {
+     id: 2, title: 'Sporting Success',
+    content: "World Cup winners..." 
+},
+{ 
+    id: 3, title: 'Tornado Warning',
+    content: "Residents should prepare..." 
+}
+]; 
+
+function getNews() {
+    document.getElementById('news-list').innerText='';
+
+    news.forEach(item => addNewItem(item))
+}
+
+function addNewItem(news) {
+    const template = document.getElementById("news-template").content.clonenode(true)
+    template.queryselector('card-title').innertext = news.title
+    template.queryselector('card-text').innertext = news.content
+    template.queryselector('#news-list').appendChild(template)
+}
+
+getNews()
+
+let newTimer = setInterval(getNews, 5000)
+
+
+
+function createNewsItem(event) {
+    event.preventDefault()
+    let newTitle = document.getElementById("newsTitle").value
+    let newContent = document.getElementById('newscontent').value
+    news.push({title: newTitle, content: newContent, id: news.length +1})
+}
+
+
+
+function stopInterval() {
+    clearInterval(newsTimer)
+}
+
+    </script>
+
+
+    </div>

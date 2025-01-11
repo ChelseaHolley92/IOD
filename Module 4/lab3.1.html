@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name=" viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+<style>
+    body{background-color:lightgray; display:flex; justify-content: center; align-items: center; font-family: serif; font: size 1.2em; margin:0; height:800px;}
+    #calculator {width: 400px; height:500px; border: 5px solid blueviolet; border-radius: 10px; background-color:white; padding:20px; box-shadow:  4px 10px;}     
+    #result {background-color: white; text-align: right; font-size: 2em; height:80px; line-height: 80px; padding-right: 0.5em; font-size: 2.5em; border: 4px solid; border-radius: 10px;}
+    #buttons {display: grid;  grid-template-columns: repeat(4, 1fr); padding: 10px; border:4px solid; border-radius: 10px;} 
+    button {margin: 5px; width: 60px; height:60px; font-weight:bold; background-color:blueviolet; color:white; font-size: 1.5em; border-radius: 5px; border: none; cursor:pointer; }         
+   </style>
+</head>
+<body>
+
+    <div id="Calculator">
+        <div id="result"> </div>
+            <div id="buttons">
+                <button class="number button" onClick="clickNumber(0)">0</button>
+                <button class="number button" onClick="clickNumber(1)">1</button>
+                <button class="number button" onClick="clickNumber(2)">2</button>
+                <button class="number button" onClick="clickNumber(3)">3</button>
+                <button class="operatorButton" onClick="clickOperator('+')">+</button>
+
+                <button class="number button" onClick="clickNumber(4)">4</button>
+                <button class="number button" onClick="clickNumber(5)">5</button>
+                <button class="number button" onClick="clickNumber(6)">6</button>
+                <button class="operatorButton" onClick="clickOperator('-')">-</button>
+
+                <button class="numberButton" onClick="clickNumber(7)">7</button>
+                <button class="numberButton" onClick="clickNumber(8)">8</button>
+                <button class="numberButton" onClick="clickNumber(9)">9</button>
+                <button class="operatorButton" onClick="clickOperator('/')">/</button>
+
+                <button class="equalsButton" onClick="showResult()">=</button>
+                <button class="resetButton" onClick="clearResult()">CL</button>
+                <button class="operatorButton" onClick="clickOperator('*')">*</button>
+
+
+<script src="js/calculator.js"></script>
+
+  </div>
+        </div>
+    </div>
+</body>
+

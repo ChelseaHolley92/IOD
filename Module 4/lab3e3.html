@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+font-family : Arial, Helvetica , sans-serif ;
+background-color : #e3f2fd;
+}
+.card {
+padding: 10px;
+}
+.card-title {
+font-weight : 600;
+font-size : 3em;
+padding: 0 0 10px 0;
+}
+
+
+.card-description { font-weight : 400;
+font-size : 2em
+}
+
+.portfolio-items {display:flex; }
+
+ .porfolio-items {padding: 2em;}   
+
+</style>
+</head>
+
+<body>
+
+<template id="artist-template" >
+<div class="card">
+<div class="card-body" >
+<div class="card-title" ></div>
+<div class="portfolio-items"></div>
+</div>
+</div>
+</template >
+
+<template id="porfolio-template"></template>
+<div class="porfolio-item"></div>
+<div class="portfolio-item-title"></div>
+<img class="portfolio-item-image" width="500">
+</div>
+</template>
+
+<div id="card-list"></div>
+
+
+
+<script>
+
+    const artist = {
+        name: "Van Gogh",
+        portfolio: [
+     {title: "portrait", url:https://collectionapi.metmuseum.org/api/collection/v1/iiif/436532/1671316/main-im
+     {title: "sky", url:"https://mymodernmet.com/wp/wp-content/upoads/2020/11/White-house-night-van-goh-worldwide-2.jpg" },
+    ]
+    }
+
+    const artists = {
+        name: "Van Gogh",
+        portfolio: [
+     {title: "portrait", url:https://collectionapi.metmuseum.org/api/collection/v1/iiif/436532/1671316/main-im
+     {title: "sky", url:"https://mymodernmet.com/wp/wp-content/upoads/2020/11/White-house-night-van-goh-worldwide-2.jpg" },
+    ]
+    },
+    name: "Banksy",
+        portfolio: [
+     {title: "heart", url:https://collectionapi.metmuseum.org/api/collection/v1/iiif/436532/1671316/main-im
+     {title: "banana", url:"https://mymodernmet.com/wp/wp-content/upoads/2020/11/White-house-night-van-goh-worldwide-2.jpg" },
+    ]
+
+    function addArtist(title, text) {
+    // clone the template
+    const template = document.getElementById("artist-template")
+         // populate the template
+    template.querySelector('.card-title').innerText = name;
+
+    porfolio.forEach(item => {
+        const template = document.getElementById("portfolio-template").content.cloneNode(true);
+        template.querySelector('portfolio-item-title').innerText = item.title;
+        template.querySelector('portfolio-item-image').src = item.title;
+        template.querySelector('portfolio-item-image').alt = item.title;
+    
+
+        document.querySelector('#card-list').appendChild(template);
+
+addArtist(artist.name,artist.portfolio)
+
+artists.forEach(artist =>addArtist.name, artist.portfolio)
+
+</script>
+</body>
+</html>

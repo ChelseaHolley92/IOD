@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name=" viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab 8</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+</head>
+<body>
+
+    <h4>Days since my birthday</h4>
+    <div id="daysSinceMyBirthday">
+
+        <h4>Days, years & months since my Birthday</h4>
+        <div id="daysYearsMonthsSinceMyBirthday">
+
+            <h4>which day is closer</h4>
+            <div id="CloserDate"></div>
+
+            <h4>Which date came before?</h4>
+            <div id="previousDate">
+
+                <h4>The current Time in London</h4>
+                <div id="londonTime">
+
+                    <script>
+
+                        let nowMoment = moment(
+
+                        const birthday = '01/01/2001'
+                        let birthDate = moment(birthday, 'DD/MM/YYYY')
+                        const dayDifference = nowMoment.diff(birthDate, 'days')
+
+                        let displayBirthday = document.getElementById('daysSinceMyBirthday')
+                        displayBirthday.innerText = '${daysDifference} days since ${birthDate}'
+
+
+                        const duration = moment.duration(nowMoment.diff(birthDate))
+                        const years = duration.years()
+                        const months = duration.months()
+                        const days = duration.days()
+                        let fullDisplayBirthday = document.getElementById('daysYearsMonthsSinceMyBirthday')
+                        fullDisplayBirthday.innerText = ${years}
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
