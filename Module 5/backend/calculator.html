@@ -1,0 +1,67 @@
+<!--Slide 35 Example-->
+<html lang="en">
+<head>
+    <title>Calculator Example</title>
+</head>
+<body>
+    <div>Result
+<span id="result"></span>
+</div>
+</body>
+<script>
+    let num1 = 6;
+    let num2 = 2;
+    fetch(`/calculator/add?num1=${num1}&num2=${num2}`)
+    .then(response => response.json())
+    .then(data => {
+document.getElementById("result").innerHTML =data.result;
+})
+    </script>
+</html> -->
+
+<!--Slide 37 Exercise 3-->
+
+<html lang="en">
+
+<head>
+   
+    <title>Exercise 3</title>
+</head>
+
+
+<body>
+
+    <label>number #1: <input id="num1" type="number"> </label>
+    <label>number #2: <input id="num1" type="number"> </label>
+
+    <div>
+        <button onclick="getResult('add')">Add!</button>
+        <button onclick="getResult('subtract')">subtract!</button>
+        <button onclick="getResult('add')">Multiply!</button>
+        <button onclick="getResult('add')">Divide!</button>
+    </div>
+
+    <div>Result</div>
+        <span id="result"></span>
+        </div>
+        </body>
+
+<script>
+
+    function getResult(operationRoute) {
+        let num1 = document.getElementById("num1").value
+        let num2 = document.getElementById("num1").value
+
+        fetch('/calculator/${operationRoute})?num1=${num1}&num2}')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("result").innerHTML = data.result
+        })
+
+    }
+
+
+
+    
+</script>
+
